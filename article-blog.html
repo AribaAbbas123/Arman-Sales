@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Article-blog</title>
+  <link rel="stylesheet" href="./assets/css/style-article-blog.css">
+  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+  <link rel="shortcut icon" href="./assets/images/cropped-Armaan_color-logo-inverse 1 (2).png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- navbar  -->
+  <nav class="black">
+    <div class="main">
+      <div class="nav-left">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="./assets/images/image 1.png" id="logoImg" alt=""></a>
+        </div>
+      </div>
+      <div class="nav-right d-flex  ">
+        <!-- icons  -->
+        <div class="icon4">
+          <span class="icons-span"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFFFF"
+              class="bi bi-facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg></span>
+          <span class="icons-span"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFFFF"
+              class="bi bi-twitter" viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg></span>
+          <span class="icons-span"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFFFF"
+              class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></span>
+          <span class="icons-span"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFFFF"
+              class="bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg></span>
+        </div>
+        <!-- navbar links  -->
+        <div class="navbar-nav">
+          <ul class="ps-0" id="navbar">
+            <li><a class="nav-link active" href="/products.html">OUR PRODUCTS</a></li>
+            <li><a class="nav-link " href="/blog.html">BLOG</a> </li>
+            <li><a class="nav-link" href="/careers.html">CAREERS</a> </li>
+            <li><a class="nav-link " href="/learning.html">LEARNING</a> </li>
+            <div class="dropdown">
+              <li><a class="dropbtn" href="/aboutus.html">ABOUT US<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFF" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+              </svg></a> </li>
+              <div class="dropdown-content">
+                <a href="/salesteam.html">OUR TEAM</a>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <!-- navbar button  -->
+        <div class="navbar-btn">
+          <a href="/contact.html">
+            <button type="button" class="icon-btn btn btn-light btn-lg">Contact
+              Us<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-send-fill ps-1" viewBox="0 0 16 16">
+                <path
+                  d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+              </svg></button>
+          </a>
+        </div>
+        <input type="hidden" name="" value="false" id="navbarTogglerInput">
+        <svg onclick="navbarToggler(this)" id="toogler" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          fill="#FFF" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar  -->
+  <!-- Article page  -->
+  <div class="container-fluid bg-dark">
+    <div class="container">
+    <div class="row article-main ">
+      <!-- text with 1 img  -->
+      <div class="col-lg-7 col-md-12">
+        <div class="article">
+          <a href="/article-blog.html"> <img src="/assets/images/Rectangle 4002 (1).png" alt="" width="100%"></a>
+          <h2 class="article-h2 pt-3">DropShipping: What to Expect in Your First Year</h2>
+          <div class="color">
+            <p class="article-light">June 15, 2022 by <span> Armaan Resales </span></p>
+            <p class="article-bold">Beginning a DropShipping business is much like a traditional brick-and-mortar
+              business. The first year can be the most formidable challenge you’ll face. To help you navigate your
+              first 12 months, the DropShipping experts at Armaan Resales explain what you can expect along the way.
+            </p>
+            <p class="article-light">The first month of any business requires a lot of paperwork and is arguably the biggest challenge.
+              You’ll need to do many things before you can get up and running, and it’ll take some time before you
+              begin to see profits from your venture. Here are a few things you’ll need to do in your first few months
+              of DropShipping:</p>
+            <p class="article-bold">Identify the DropShipping store owner </p>
+            <p class="article-light">There are three types of business structures to choose from:
+            <ul>
+              <li>Sole proprietor or sole trader</li>
+              <li>Partnership</li>
+              <li> Corporation</li>
+            </ul> 
+            </p>
+            <p class="article-light"> Each business type has its advantages. It’s crucial to do your research and decide which is best for your
+              situation. Many DropShippers choose to go the sole proprietor route since it is relatively easy to set up
+              and has fewer requirements than the alternatives.</p>
+           
+            <p class="article-bold">Identify the business</p>
+            <p class="article-light">The identity of the business and the owner are ultimately linked. Sole
+              proprietorship and partnership are two types of businesses. You can also set your DropShipping store up
+              as a limited company. As with the first, doing your research and understanding which is best for you is
+              the way forward.</p>
+            <p class="article-bold">Platform verification</p>
+            <p class="article-light">Each online marketplace and eCommerce platform is different, as are their
+              requirements. Before you can start selling on their platforms, they’ll need to ensure that you can
+              legally operate using their services. Some of these includes:
+            <ul>
+              <li>Providing a valid passport or accepted form of ID</li>
+              <li> Company registration details, including VAT number</li>
+              <li>Business address</li>
+            </ul>
+            </p>
+            <p class="article-bold">eCommerce education</p>
+            <p class="article-light">Once you’ve set up your business, you’re VAT registered, and you’ve successfully
+              registered with a platform, you’ll need to learn the ins and outs of your chosen online marketplace to
+              make the most of using its services to sell your goods. The top online marketplaces provide a wealth of
+              information to help their sellers succeed, including:
+            <ul class="artilce-line">
+              <li> Amazon Seller University</li>
+              <li> Shopify’s Guides</li>
+              <li>eBay Seller Hub</li>
+              <li> Big Commerce Guides</li>
+              <li> Walmart Seller Help</li>
+              <li>Takealot Seller Solutions</li>
+            </ul>
+            </p>
+            <p class="article-light">If you’re doing this without a team of experts like Armaan Resales, you will need
+              to educate yourself so that there are no surprises along the way. Knowledge is the best resource on your
+              DropShipping journey.</p>
+            <p class="article-bold">Finding your niche</p>
+            <p class="article-light">The biggest job for an eCommerce retailer is finding the right products and
+              sourcing them from reputable wholesalers. Ensuring your products are high-quality and wholesalers
+              provide excellent communication and delivery times is paramount to your business’s success.</p>
+            <p class="article-light">This step can be very time-consuming. There are thousands of product wholesalers
+              globally, and it’s important to do your homework to ensure you find the right suppliers for your
+              business. Check out our guide to setting up a DropShipping store for insight into the steps required to
+              find a wholesaler you can trust.</p>
+            <p class="article-light">Once you’ve chosen your products and found a reputable supplier, you’ll need to
+              add these products to your store. Depending on the online marketplace or platform you’ve chosen, adding
+              products to your listing is different. It’s best to check the requirements of your hosting site, as this
+              could make or break your business.</p>
+            <p class="article-bold">Setting expectations</p>
+            <p class="article-light">Your products are in your listings, and you’re ready to go. Before you hit that
+              button to load your products into the live feed, there are a few things that you should consider:
+            <ul>
+              <li>Delivery expectations: Set realistic delivery timelines to manage customer expectations</li>
+              <li>Returns, replacements and refunds: Depending on your platform, you may need to identify your
+                criteria for product replacements and refunds, including timelines for how long you’ll accept returns.
+                Some platforms have their own guidelines in place that you’ll need to adhere to, and it’s important to
+                consider that when choosing your online marketplace</li>
+              <li>Customer demand: It’s hard to forecast product and customer demand when you’re just beginning. It’s
+                advisable to research product trends to gauge customer demand so that you can keep up with supply and
+                demand.</li>
+            </ul>
+            </p>
+            <p class="article-bold1">When will I start seeing profits?</p>
+            <p class="article-light">First, it’s important to understand that the steps above take time. How much time
+              it takes depends entirely on the work you put in. Equally important is being realistic about timelines.
+              Starting your own business is time-consuming and requires effort.
+              <br>
+              DropShipping profits will come with time, but seeing those yields is reliant on several factors,
+              including:
+            <ul>
+              <li> Product quality and availability</li>
+              <li>Service quality</li>
+              <li> Deliverability metrics</li>
+              <li>Customer communication during returns and refunds</li>
+              <li> Marketing strategy</li>
+            </ul>
+            </p>
+            <p class="article-light">You shouldn’t be dismayed at the work required to get your DropShipping store up
+              and running. Suppose you partner with an expert like Armaan Resales. In that case, the entire process
+              can be significantly faster with the help of a team of experts, sophisticated automation systems and a
+              trusted network of suppliers.</p>
+            <p class="article-bold1">Beyond the first year</p>
+            <p class="article-light">Once your business celebrates its first year, it’s time to re-evaluate things.
+              Ask yourself:
+            <ul>
+              <li>Am I happy with the profits my business turning over?</li>
+              <li> Do I want to diversify my products?</li>
+              <li>Do I want to expand into new markets?</li>
+            </ul>
+            If your DropShipping store is already seeing substantial sales and you want to scale your business
+            further, there are a few things you can do.
+            <ul>
+              <li> Set up a second store on your chosen platform: This can help you diversify your product range,
+                allowing you to sell new products without affecting your current profitability.</li>
+              <li> Go international: One of the great things about eCommerce is its ability to reach customers
+                globally. Consider the list of countries your business currently sells to and take advantage of
+                emerging markets.</li>
+              <li> Diversify your marketplace: If you feel that your current DropShipping store is peaking, it may be
+                wise to consider branching out into new marketplaces or platforms. Having an additional store could
+                significantly increase your presence with your target market, thus enhancing profitability.</li>
+            </ul>
+            </p>
+            <p class="article-bold2">How can Armaan Resales help?</p>
+            <p class="article-light">With more than a decade of experience, Armaan Resales has the expertise to help get
+              your DropShipping business up and running quicker. With smart software that automates time-consuming
+              processes and an ever-growing network of trusted product suppliers, partnering with Armaan Resales takes a
+              lot of the hard work out of starting your DropShipping business. Get in touch with our team of experts to
+              begin your DropShipping journey today.</p>
+          </div>
+          <textarea name="" class="text mt-3" cols="80" rows="5">Leave a comment</textarea>
+          <button type="button" class="btn btn-success my-lg-5 my-md-3 my-sm-3 my-3 btn-lg px-4">Post Comment</button>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-9">
+        <div class="colum">
+          <div class="card h-100 bg-dark ">
+            <a href="/article-blog.html"><img src="./assets/images/Rectangle 4002 (1).png" class="card-img-top"
+                alt="..."></a>
+            <div class="card-body p-0">
+              <h4 class="card-title pt-3">DropShipping: What to Expect in Your First Year</h4>
+              <p class="card-text blog-text text-white">Beginning a DropShipping business is much like a traditional
+                brick-and-mortar business. The first year can be the most formidable challenge you’ll face. To help you
+                navigate your first 12 months, the DropShipping experts at Armaan Resales explain what you can expect
+                along the way. The first month of any business requires a lot of paperwork</p>
+              <p class="text-white">January 17, 2023</p>
+              <div class="card6 my-lg-5 my-md-3 my-sm-3 my-3">Read More</div>
+            </div>
+          </div>
+              <div class="card h-100 bg-dark ">
+                <a href="/article-blog.html"> <img src="./assets/images/Rectangle 4002 (2).png" class="card-img-top" alt="..." ></a>
+                 <div class="card-body p-0">
+                   <h4 class="card-title pt-3">What to DropShip this Summer</h4>
+                   <p class="card-text blog-text text-white">Temperatures are rising, and summer is right around the corner. If you’re looking for the hottest product trends to jump on as we swing into one of the year’s biggest shopping seasons, we’ve got your back. Using in-depth market research, the DropShipping experts at Armaan Resales have put together a comprehensive list of products to</p>
+                   <p class="text-white">January 17, 2023</p>
+                   <div class="card6 my-lg-5 my-md-3 my-sm-3 my-3">Read More</div>
+                 </div>
+               </div>
+               <div class="card h-100 bg-dark ">
+                <a href="/article-blog.html"> <img src="./assets/images/Rectangle 4002 (3).png" class="card-img-top" alt="..." ></a>
+                 <div class="card-body p-0">
+                   <h4 class="card-title pt-3">How To Set Up a DropShipping Business</h4>
+                   <p class="card-text blog-text text-white">Whether you’re an entrepreneur looking to make your mark on the world of eCommerce or you’re a pensioner who wants to bring in some extra money during your retirement, DropShipping is an ideal solution. Before starting your DropShipping journey, the eCommerce experts at Armaan Resales have put together a comprehensive guide that walks you through</p>
+                   <p class="text-white">January 17, 2023</p>
+                   <div class="card6 my-lg-5 my-md-3 my-sm-3 my-3">Read More</div>
+                 </div>
+               </div>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+       <!-- white heading  -->
+       <div class="py-lg-5 py-md-3 py-sm-3 py-3">
+        <p class="title2 text-center text-white ">Ready to get started?</p>
+        <p class="white text-center text-white m-auto pb-3">We help busy professionals by building a 90% automated amazon store that makes money while they sleep. If this sounds interesting, we would love to share more details about how we can help you build your own store!
+        </p>
+        
+        <div class="input-group mb-3 m-auto text-center">
+          <input type="text" class="form-control py-lg-4 py-md-2 " placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-secondary btn-lg" type="button" id="button-addon2">Sign Up</button>
+        </div>
+        </div>
+    </div>
+  
+
+
+
+
+  <!-- Article page  -->
+  <hr class="yellow m-0">
+  <!-- footer with 4 columns -->
+  <div class="container-fluid black pt-5">
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-lg-3 mb-3">
+          <div class="logo">
+            <img src="./assets/images/image 1.png" alt="">
+            <div class="logo-p ">
+              We help busy professionals by building a 90% automated amazon store that makes money while they sleep. If
+              this sounds interesting, we would love to share more details about how we can help you build your own
+              store in under 20 minutes!
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <div class="contact">
+            <h4>Contact</h4>
+            <p class="mb-0">US +1 (909) 414-1167</p>
+            <p class="mb-0"> UK +44 1228 588189</p>
+            <p class="2ndpara mt-3">
+              support@armaanresales.com
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <div class="navigation">
+            <h4>Navigation</h4>
+            <p class=""> Our Products</p>
+            <p class=""> Blog</p>
+            <p class="mb-0"> Careers</p>
+          </div>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <div class="social-link">
+            <h4>Social Links</h4>
+            <div class="icons4">
+              <span class="icons-span"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFFFF"
+                  class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg></span>
+              <span class="icons-span"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFFFF"
+                  class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg></span>
+              <span class="icons-span"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFFFF"
+                  class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg></span>
+            </div>
+          </div>
+          <div class="link mt-3 mb-2">
+            Become part of the Armaan Resales success story.
+          </div>
+          <div class="navbar-btn1">
+            <a href="/contact.html">
+              <button type="button" class="icon-btn btn btn-light btn-lg">Contact
+                Us<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-send-fill ps-1" viewBox="0 0 16 16">
+                  <path
+                    d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                </svg></button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-white pt-4 pb-5">
+        @2023 ARMAAN RESALES, ALL RIGHTS RESERVED | Designed By: Powered By Coffee Media
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function navbarToggler(e) {
+      if (navbarTogglerInput.value == "false") {
+        navbarTogglerInput.value = "true"
+        navbar.style.top = "69px"
+      }
+      else {
+        navbarTogglerInput.value = "false"
+        navbar.style.top = "-200px"
+      }
+    }
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logoImg").style.width = "100px";
+  } else {
+    document.getElementById("logoImg").style.width = "120px";
+  }
+}
+  </script>
+
+
+
+
+</body>
+
+</html>

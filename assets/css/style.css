@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+@font-face {
+  font-family: Quart;
+  src: url(/assets/fonts/Quart-Regular.ttf);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Quart;
+}
+#logoImg{
+  transition: .5s ease-in-out;
+}
+h5 {
+  font-family: 'Poppins', sans-serif;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 85%;
+  margin: auto;
+  padding: 15px 0px;
+}
+
+.nav-right {
+  max-width: 73%;
+  align-items: center;
+}
+.navbar-nav {
+  color: white;
+}
+.navbar-nav a:hover {
+  color: #c2ee85;
+}
+.navbar-nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  margin: 0px;
+}
+.navbar-nav li {
+  margin: 0px 13px;
+}
+
+.nav-link:hover {
+  color: #c2ee85;
+}
+.active {
+  color: #c2ee85 !important;
+}
+.navbar-btn .icon-btn {
+  font-size: 16px;
+  background-color: #c2ee85;
+  border: #c2ee85;
+  font-weight: 700;
+}
+.navbar-btn .icon-btn:hover {
+  background-color: white;
+}
+.icons-span {
+  margin: 0px 3px;
+}
+#toogler {
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+
+.image {
+  background-image: url(/assets/images/skyscrapers_of_moscow_city_business_center_and_cit_2022_08_03_15\ 1.png);
+  background-size: cover;
+  height: 1070px;
+}
+.headings h1 {
+  color: #45bd54;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 77px;
+  text-align: center;
+}
+.headings .para1 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
+  padding: 30px 12px;
+  max-width: 81%;
+  margin: auto;
+}
+.headings .para2 {
+  font-weight: 500;
+  line-height: 28px;
+  max-width: 73%;
+  margin: auto;
+  font-size: 20px;
+}
+.headings button {
+  background-color: #45bd54;
+  border: #45bd54;
+}
+.card-heading {
+  font-family: 'Montserrat';
+  padding-top: 120px;
+}
+.card-title {
+  color: #45bd54 !important;
+  width: 199px;
+  margin: auto;
+  font-weight: 700;
+  font-size: 24px;
+}
+.card-text {
+  width: 267px;
+  margin: auto;
+  font-weight: 400;
+}
+.content h2 {
+  color: #45bd54;
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-weight: 700;
+}
+.content p {
+  font-family: 'Poppins';
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.lists span {
+  color: white;
+  font-size: 24px;
+}
+.lists {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.list li {
+  list-style-type: square;
+  font-size: 23px;
+  text-align: left;
+}
+.list li span {
+  font-family: 'Poppins';
+}
+.piechart img {
+  width: 52%;
+}
+.text-green {
+  color: #45bd54;
+  font-size: 64px;
+  padding-top: 80px;
+  font-family: 'Quart';
+}
+.white-card {
+  background-color: white;
+  border-radius: 7px;
+}
+.star {
+  text-align: left;
+}
+.star-body {
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  font-size: 18px;
+}
+.star-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.star-text h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+}
+.star-text p {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+}
+.center {
+  background-color: white;
+}
+.btn .arrows {
+  border-radius: 16px;
+}
+.bg-green {
+  background-color: #45bd54;
+  border-radius: 16px;
+}
+.black {
+  background-color: black;
+}
+
+.accordion-button {
+  color: white !important;
+  font-size: 36px !important;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+.dot-line {
+  border-bottom: 5px dotted white !important;
+  opacity: 1;
+}
+.yellow {
+  border-bottom: 5px solid #c2ee85 !important;
+  opacity: 1;
+  margin-top: 100px;
+}
+.link {
+  color: #45bd54;
+  font-family: 'Quart';
+}
+.navbar-btn1 .icon-btn {
+  font-size: 16px;
+  background-color: #c2ee85;
+  border: #c2ee85;
+  font-weight: 700;
+}
+.navbar-btn1 .icon-btn:hover {
+  background-color: white;
+}
+.logo-p,
+.contact,
+.navigation,
+.social-link {
+  font-family: 'Montserrat', sans-serif;
+}
+.dropbtn {
+  background-color:black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 135px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding-top: 15px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding:20px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  color:#c2ee85 ;
+}
+
+.dropdown-content a:hover {background-color: black;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black;}
+
+/* Large screen */
+@media only screen and (max-width: 1524px) {
+  .icon4 {
+    display: none;
+  }
+  .navbar-nav li {
+    margin: 0px 12px;
+  }
+  .main {
+    max-width: 95%;
+  }
+  .headings h1 {
+    font-size: 68px;
+    line-height: 87px;
+  }
+  .image .col-lg-6 {
+    width: 80% !important;
+  }
+}
+
+/* Media Querries for Tab view  */
+/* @media only screen and (min-width: 768px) and (max-width: 992px){ */
+@media only screen and (max-width: 992px) {
+  .navbar-nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    margin: 0px;
+    background: #000;
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    top: -200px;
+    transition: .7s ease-in-out;
+    position: fixed;
+  }
+  .dropbtn {
+    padding: 0px 16px;
+  }.dropdown-content a {
+    padding: 6px 16px;
+  }.dropdown-content {
+    padding-top: 5px;
+}
+  .headings h1 {
+    font-size: 42px;
+    line-height: 70px;
+  }
+  .headings .para1 {
+    max-width: 100%;
+    font-size: 23px;
+  }
+  .headings .para2 {
+    font-size: 18px;
+    max-width: 90%;
+  }
+  .image {
+    height: 760px;
+  }
+  .list {
+    max-width: 41%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .piechart img {
+    width: 53%;
+  }
+  #toogler {
+    display: block;
+  }
+
+  .nav-right {
+    display: none !important;
+  }
+  .icon4 {
+    display: none;
+  }
+
+  .navbar-btn {
+    display: none;
+  }
+  .text-green {
+    font-size: 37px;
+    padding-top: 40px;
+  }
+  .accordion-body img {
+    width: 100%;
+    text-align: center;
+  }.card-heading {
+    padding-top: 52px;
+}
+}
+/* Mobile View  */
+@media only screen and (max-width: 768px) {
+  .headings h1 {
+    font-size: 29px;
+    line-height: 40px;
+  }
+  .headings .para1 {
+    font-size: 16px;
+  }
+  .headings .para2 {
+    font-size: 15px;
+    max-width: 95%;
+    line-height: 23px;
+  }
+  .image {
+    height: 800px;
+  }
+  .list {
+    max-width: 100%;
+  }
+  .piechart img {
+    width: 100%;
+  }
+  .text-green {
+    font-size: 28px;
+    padding-top: 25px;
+  }
+  .accordion-button {
+    font-size: 19px !important;
+  }
+  .card-title {
+    font-size: 21px;
+  }.image .col-lg-6 {
+    width: 100% !important;
+}.headings .para1 {
+  line-height: 23px;
+  padding: 16px 10px;
+}.yellow {
+  margin-top: 50px;
+}.card-heading {
+  padding-top: 35px;
+}.star-body {
+  line-height: 25px;
+  font-size: 15px;
+}.lists span {
+  font-size: 20px;
+}
+}

@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  /* border: 1px solid red; */
+}
+@font-face {
+  font-family: Quart;
+  src: url(/assets/fonts/Quart-Regular.ttf);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Quart;
+}#logoImg{
+  transition: .5s ease-in-out;
+}.dropbtn {
+  background-color:black;
+  color: white;
+  font-size: 16px;
+  padding: 16px;
+  border: none;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 135px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding-top: 15px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding:20px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  color:#c2ee85 ;
+}
+
+.dropdown-content a:hover {background-color: black;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black;}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 85%;
+  margin: auto;
+  padding: 15px 0px;
+}
+
+.nav-right {
+  max-width: 73%;
+  align-items: center;
+}
+.navbar-nav {
+  color: white;
+}
+.navbar-nav a:hover {
+  color: #c2ee85;
+}
+.navbar-nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  margin: 0px;
+}
+.navbar-nav li {
+  margin: 0px 13px;
+}
+
+.nav-link:hover {
+  color: #c2ee85;
+}
+.active {
+  color: #c2ee85 !important;
+}
+.navbar-btn .icon-btn {
+  font-size: 16px;
+  background-color: #c2ee85;
+  border: #c2ee85;
+  font-weight: 700;
+}
+.navbar-btn .icon-btn:hover {
+  background-color: white;
+}
+.icons-span {
+  margin: 0px 3px;
+}
+#toogler {
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+.black {
+  background-color: black;
+}
+/* navbar  */
+
+/* Article page Css  */
+.article-main {
+  padding-top: 160px !important;
+}
+.article-h2{
+  color: #c2ee85;
+}
+.color{
+  color:  #FFFFFF;;
+}
+.article-light span{
+  text-decoration: underline;
+}
+.article-bold{
+  font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+}
+.article-bold1{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.article-bold2{
+  font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+}
+.artilce-line li{
+text-decoration: underline;
+}
+textarea{
+  background-color: #222220;
+  color: #FFFFFF;
+}
+.text{
+  padding: 10px;
+  border-radius: 4px;
+}
+.article button{
+  font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+background-color: #45bd54;
+border: #45bd54;
+}
+.card-title{
+  color: #c2ee85 !important;
+}
+.colum{
+  margin-left: 190px;
+}
+.card6{
+  color: #45bd54;
+  font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+}
+.h-100 {
+  border: none !important;
+}
+.title2{
+  font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+}
+.white{
+  font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+max-width: 60%;
+}
+.input-group{
+  max-width: 32%;
+}
+.form-control{
+color:  #A5A5A5 !important;
+}
+.input-group .btn{
+  background-color: #45BD54 !important;
+  border: #45BD54 !important;
+  z-index: 0 !important
+}
+/* Article page Css  */
+/* footer  */
+.yellow {
+  border-bottom: 5px solid #c2ee85 !important;
+  opacity: 1;
+}
+.link {
+  color: #45bd54;
+  font-family: 'Quart';
+}
+
+.navbar-btn1 .icon-btn {
+  font-size: 16px;
+  background-color: #c2ee85;
+  border: #c2ee85;
+  font-weight: 700;
+}
+.navbar-btn1 .icon-btn:hover {
+  background-color: white;
+}
+
+
+
+/* Large screen */
+@media only screen and (max-width: 1524px) {
+  .icon4 {
+    display: none;
+  }
+  .navbar-nav li {
+    margin: 0px 12px;
+  }
+  .main {
+    max-width: 95%;
+  }
+  .input-group {
+    max-width: 50%;
+  }
+}
+
+/* Large screen */
+@media only screen and (max-width: 1440px){
+  .colum {
+    margin-left: 140px;
+}.text{
+  width: 93%;
+}
+}
+
+/* Large screen */
+@media only screen and (max-width: 1200px){
+  .colum {
+    margin-left: 75px;
+}.text{
+  width: 93%;
+}.article button{
+  font-size: 19px;
+}
+}
+
+/* Tab View  */
+@media only screen and (max-width: 992px) {
+  .navbar-nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    margin: 0px;
+    background: #000;
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    top: -200px;
+    transition: .7s ease-in-out;
+    position: fixed;
+  }.dropbtn {
+    padding: 0px 16px;
+  }.dropdown-content a {
+    padding: 6px 16px;
+  }.dropdown-content {
+    padding-top: 5px;
+}
+
+  #toogler {
+    display: block;
+  }
+  .nav-right {
+    display: none !important;
+  }
+  .icon4 {
+    display: none;
+  }
+  .navbar-btn {
+    display: none;
+  }
+  .blog-text-green {
+    font-size: 60px;
+  }.input-group {
+    max-width: 60%;
+  }.white {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 75%;
+  } .colum {
+    margin-left: 75px;
+}.article-main {
+  padding-top: 100px !important;
+}.article-light{
+  line-height: 18px;
+  font-size: 16px;
+}.article-bold{
+  line-height: 18px;
+  font-size: 17px;
+}.article-bold2 {
+  font-size: 26px;
+  line-height: 32px;
+}li{
+  line-height: 19px;
+  font-size: 16px;
+}
+}
+
+
+/* Mobile View  */
+@media only screen and (max-width: 768px){
+  .title2 {
+    font-size: 34px;
+    line-height: 37px;
+  }.white {
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 96%;
+  }.input-group {
+    max-width: 97%;
+  }.text {
+    width: 100%;
+}.article-main {
+  padding-top: 82px !important;
+}.article-light{
+  line-height: 18px;
+  font-size: 14px;
+}.article-bold{
+  line-height: 18px;
+  font-size: 14px;
+}.article-bold2 {
+  font-size: 23px;
+  line-height: 32px;
+}.article button {
+  font-size: 18px;
+  line-height: 24px;
+}.colum {
+  margin-left: 0px;
+}li{
+  line-height: 18px;
+  font-size: 14px;
+}.article-bold1 {
+  font-size: 23px;
+}.card6 {
+  font-size: 21px;
+  line-height: 10px;
+}
+}
